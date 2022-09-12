@@ -32,11 +32,13 @@ search_btn.addEventListener("click", () => {
 
         humi.innerHTML = `<i class="fa-solid fa-droplet"></i> ${data.main.humidity} %`;
 
-        speed.innerHTML = `<i class="fa-solid fa-wind"></i> ${data.wind.speed} Km/h`
+        speed.innerHTML = `<i class="fa-solid fa-wind"></i> ${data.wind.speed} Km/h`;
+
+        search.value = "";
     });
 
 
-    search.innerHTML = "";
+    
 
 })
 

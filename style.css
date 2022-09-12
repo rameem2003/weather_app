@@ -7,21 +7,24 @@
 
 
 body{
-    background-color: blue;
+    background: url("./noah-silliman-i2J9jnvaAbU-unsplash.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-size: cover;
+    object-fit: cover;
 }
 
 #wrapper{
     width: 350px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
     border-radius: 12px;
     /* height: 480px; */
     height: 160px;
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
 #wrapper #search_box{
@@ -37,9 +40,12 @@ body{
     padding: 15px;
     outline: none;
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+    border: none;
 }
 #wrapper #search_box input::placeholder{
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
