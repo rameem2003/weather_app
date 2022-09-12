@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!-- weather app -->
+    <div id="wrapper">
+        <div id="search_box">
+            <input type="text" name="" id="search" placeholder="Search Your City Here">
+            <button id="search_btn">Search</button>
+        </div>
+        <div id="output_box">
+            <h1 id="city"></h1>
+
+            <h2 id="temp"></h2>
+
+            <img id="icon" src="" alt="">
+
+            <h2 id="state"></h2>
+
+
+            <div id="others">
+                <div class="left">
+                    <span id="humi"></span>
+                </div>
+                <div class="right">
+                    <span id="speed"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- weather app end -->
+
+
+    <!-- local js -->
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#wrapper{
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    /* height: 480px; */
+    height: 160px;
+    transition: 0.5s linear;
+}
+
+#wrapper #search_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#wrapper #search_box input{
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 20px;
+}
+#wrapper #search_box input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+#wrapper #search_box #search_btn{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+#wrapper #output_box{
+    text-align: center;
+    visibility: hidden;
+
+}
+
+#wrapper #output_box #city{
+    margin: 20px 0;
+}
+
+#wrapper #output_box #temp{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: -7px;
+}
+
+#wrapper #output_box #state{
+    font-size: 35px;
+}
+
+#wrapper #output_box #others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#wrapper #output_box #others .left,
+#wrapper #output_box #others .right{
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+}
