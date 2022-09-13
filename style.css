@@ -82,7 +82,7 @@ body{
     font-size: 35px;
 }
 
-#wrapper #output_box #others{
+#wrapper #output_box #others, #wrapper #output_box #min_max_temp{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +90,16 @@ body{
 }
 
 #wrapper #output_box #others .left,
-#wrapper #output_box #others .right{
+#wrapper #output_box #others .right,
+#wrapper #output_box #min_max_temp .left,
+#wrapper #output_box #min_max_temp .right{
     width: 50%;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+#wrapper #output_box #min_max_temp .left,
+#wrapper #output_box #min_max_temp .right{
+    font-size: 25px;
 }
