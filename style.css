@@ -49,9 +49,17 @@ body{
     font-weight: bold;
 }
 
-#wrapper #search_box #search_btn{
+#wrapper #search_box .btns{
     width: 100%;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#wrapper #search_box .btns #search_btn,
+#wrapper #search_box .btns #curr{
+    width: 50%;
+    font-size: 17px;
     padding: 10px;
     outline: none;
     background-color: blue;
@@ -60,6 +68,11 @@ body{
     border-radius: 20px;
     transition: 0.5s linear;
     cursor: pointer;
+    margin: calc(8% - 20px);
+}
+
+#wrapper #search_box .btns #curr{
+    background-color: red;
 }
 
 #wrapper #output_box{
